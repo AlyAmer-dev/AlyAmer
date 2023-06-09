@@ -10,7 +10,7 @@
     --step-4: clamp(2.33rem, calc(1.82rem + 2.58vw), 3.82rem);
     --step-5: clamp(2.80rem, calc(2.11rem + 3.42vw), 4.77rem);
     /* --Mfont:'Space Mono' , monospace; */
-    --Logo-font: 'Nabla', sans-serif;
+    --Logo-font:'Nabla', cursive;
     --Mcolor: #fff;
     --Color-Gradient: linear-gradient(to right, #009688 , #52df58);
 }
@@ -121,6 +121,46 @@ a {
     transform: rotate(-25deg);
 }
 
+.gif-mark::before {
+   
+    content: '';
+    background-image: url(images/diamond.gif);
+    background-size: cover;
+    width: 40px;
+    display: inline-block;
+    height: 40px;
+    position: absolute;
+    top: 4px;
+    left: 5px;
+    box-shadow: 2px 4px 6px #00000054;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    /* animation: gif-mark 3s infinite linear; 
+    -webkit-animation: gif-mark 3s infinite linear; */
+}
+
+/* @keyframes gif-mark {
+    33% {
+        filter: invert(1);
+        -webkit-filter: invert(1);
+    }
+    66% {
+        filter: sepia(1);
+        -webkit-filter: sepia(1);
+    }
+    99% {
+        filter: none;
+        -webkit-filter: none;
+    }
+    100% {
+        filter: invert(1);
+        -webkit-filter: invert(1);
+    }
+} */
+
 /** The Styling  */
 
 body , html {
@@ -203,7 +243,6 @@ header main.header > div a:hover {
 .landing > div p:first-of-type {
 
     font-size: var(--step-5);
-    margin-inline: auto;
 }
 
 .landing > div  p:last-of-type {
@@ -486,7 +525,7 @@ header main.header > div a:hover {
 
     display: flex;
     justify-content: space-between;
-    font-size: 1em;
+    font-size: .7em;
     padding: 10px;
 }
 
@@ -643,7 +682,7 @@ footer > main p:last-of-type > span {
 		margin: 0;
     }
     footer {
-        font-size: 1em;
+        font-size: 10px;
     }
 }
 
