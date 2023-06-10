@@ -13,11 +13,12 @@
     --Logo-font:'Nabla', cursive;
     --Mcolor: #fff;
     --Color-Gradient: linear-gradient(to right, #009688 , #52df58);
+    --main-color: hsl(229, 57%, 11%);
 }
 
 *::selection {
     
-    background-color: hsl(229, 57%, 11%);
+    background-color: var(--main-color);
     color: #fff;
 }
 
@@ -28,6 +29,21 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     /* outline: 1px solid greenyellow; */
+}
+
+::-webkit-scrollbar {
+
+    width: 7px;
+}
+	
+::-webkit-scrollbar-thumb {
+
+    background-image: var(--Color-Gradient);
+}
+
+::-webkit-scrollbar-track {
+
+    background-color: var(--main-color);
 }
 
 /** Framework */
@@ -171,7 +187,7 @@ body , html {
 body {
     
     min-height: 100vh;
-    background-color: hsl(229, 57%, 11%);
+    background-color: var(--main-color);
     font-size: var(--step-0);
     font-family: monospace;
 }
@@ -188,7 +204,7 @@ body {
 header {
 
     padding: 20px;
-    background-color: hsl(229, 57%, 11%);
+    background-color: var(--main-color);
 }
 
 header main.header {
@@ -302,7 +318,7 @@ header main.header > div a:hover {
 .skills .bars .bar {
     
     width: 100%;
-    background-color: hsl(229, 57%, 11%);
+    background-color: var(--main-color);
     height: 20px;
     border-radius: 20px;
     display: flex;
@@ -702,7 +718,7 @@ footer > main p:last-of-type > span {
 .header-back {
 
     padding: 20px;
-    background-color: hsl(229, 57%, 11%);
+    background-color: var(--main-color);
 
 }
 
