@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@500;1000&display=swap");
 :root {
   --step--2: clamp(0.78rem, calc(0.71rem + 0.38vw), 1rem);
   --step--1: clamp(0.94rem, calc(0.83rem + 0.54vw), 1.25rem);
@@ -498,9 +499,9 @@ header main.header > div a:hover {
 }
 
 .projects .cards .card img {
-    width: 100%;
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px;
+  width: 100%;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
 }
 
 /* Contact */
@@ -515,6 +516,89 @@ header main.header > div a:hover {
   display: flex;
   flex-direction: column;
   gap: 50px;
+}
+
+.contact form {
+  display: flex;
+  width: 90%;
+  margin-inline: auto;
+  gap: 2em;
+  border-bottom: 1px solid #fff6;
+  padding-bottom: 3rem;
+}
+
+.contact form .user_info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.contact form ._go textarea,
+.contact form .user_info input {
+  font-family: "Cairo", sans-serif;
+  letter-spacing: 1px;
+}
+
+.contact form ._go textarea::placeholder,
+.contact form .user_info input::placeholder {
+  color: #000;
+}
+
+.contact form ._go textarea:focus-visible,
+.contact form .user_info input:focus-visible {
+  outline: 2px solid var(--main-color);
+}
+
+.contact form .user_info input {
+  padding: 10px 10px 10px 25px;
+  border: 0;
+  box-shadow: 5px 8px 0 0 #4caf50;
+}
+
+.contact form ._go {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: space-between;
+}
+
+.contact form ._go textarea {
+  padding: 10px 10px 10px 25px;
+  resize: none;
+  height: 150px;
+  border: 0;
+  box-shadow: 5px 8px 0 0 #4caf50;
+}
+
+.contact form ._go button {
+  border: 0;
+  border-radius: 7px;
+  padding: 10px 0;
+  background-image: var(--Color-Gradient);
+  color: #fff;
+  font-weight: bold;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  width: 80%;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+@media (max-width: 769px) {
+  .contact form {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact form .user_info {
+    gap: 1em;
+    width: 100% !important;
+  }
+  .contact form ._go {
+    width: 100% !important;
+  }
 }
 
 .contact .con .info {
@@ -804,7 +888,6 @@ footer > main {
     background-color: transparent;
   }
 }
-
 
 @media (max-width: 769px) {
   footer > main {
