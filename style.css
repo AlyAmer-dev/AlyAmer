@@ -547,7 +547,7 @@ header main.header > div a:hover {
 
 .contact form ._go textarea:focus-visible,
 .contact form .user_info input:focus-visible {
-  outline: 2px solid var(--main-color);
+  outline: 3px dotted #2196F3;
 }
 
 .contact form .user_info input {
@@ -591,14 +591,16 @@ header main.header > div a:hover {
   .contact form {
     flex-direction: column;
     align-items: center;
+    gap: 3rem;
   }
+  .contact form ._go,
   .contact form .user_info {
-    gap: 1em;
     width: 100% !important;
+    gap: 3rem;
   }
-  .contact form ._go {
-    width: 100% !important;
-  }
+  .contact form ._go textarea, .contact form .user_info input {
+    box-shadow: 4px 7px 0 0 #4caf50;
+    }
 }
 
 .contact .con .info {
