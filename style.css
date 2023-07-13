@@ -309,6 +309,10 @@ header main.header > div a:hover {
   content: "CSS";
 }
 
+.skills .bars .js::after {
+  content: "JS";
+}
+
 .skills .bars .tt::after {
   content: "Touch Typing";
 }
