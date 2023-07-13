@@ -341,6 +341,10 @@ header main.header > div a:hover {
   width: 85%;
 }
 
+.skills .bars .js span {
+  width: 25%;
+}
+
 .skills .bars .tt span {
   width: 70%;
 }
