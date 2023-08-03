@@ -158,6 +158,32 @@ a {
         -webkit-filter: invert(1);
     }
 } */
+.logo_dragon {
+  position: absolute;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  bottom: -14px;
+  left: 2vw;
+  animation: dr;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.logo_dragon > .icon {
+  width: 50vw;
+  flex: 0;
+}
+
+@keyframes dr {
+  50% {
+    margin-bottom: 5px;
+  }
+  100% {
+    margin-bottom: 0;
+  }
+}
 
 /** The Styling  */
 
@@ -184,18 +210,16 @@ body {
 header {
   padding: 20px;
   background-color: var(--main-color);
+  position: relative;
 }
 
 header main.header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
-header main.header > p {
+header main.header > p.logo {
   font-family: var(--Logo-font);
-  color: var(--Mcolor);
-  font-weight: bold;
-  font-size: var(--step-1);
 }
 
 header main.header > div {
@@ -215,6 +239,7 @@ header main.header > div a:hover {
 .landing {
   height: calc(100vh - 82.5px);
   color: var(--Mcolor);
+  position: relative;
   background-image: url(images/bg-desktop.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -555,7 +580,7 @@ header main.header > div a:hover {
 
 .contact form ._go textarea:focus-visible,
 .contact form .user_info input:focus-visible {
-  outline: 3px dotted #2196F3;
+  outline: 3px dotted #2196f3;
 }
 
 .contact form .user_info input {
@@ -606,9 +631,10 @@ header main.header > div a:hover {
     width: 100% !important;
     gap: 3rem;
   }
-  .contact form ._go textarea, .contact form .user_info input {
+  .contact form ._go textarea,
+  .contact form .user_info input {
     box-shadow: 4px 7px 0 0 #4caf50;
-    }
+  }
 }
 
 .contact .con .info {
