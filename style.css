@@ -12,7 +12,7 @@
   --Logo-font: "Nabla", cursive;
   --Mcolor: #fff;
   --Color-Gradient: linear-gradient(to right, #009688, #52df58);
-  --main-color: hsl(229, 57%, 11%);
+  --main-color: hsl (229, 57%, 11%);
 }
 
 *::selection {
